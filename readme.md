@@ -8,9 +8,7 @@
 
 ## Descripción
 
-Este repositorio contiene la **solución completa** del Taller 3 del curso, centrado en el diseño e implementación de la tarea N-Back en PsychoPy Builder.
-
-La tarea sigue el paradigma N-back introducido por Kirchner (1958), e incluye tres niveles de dificultad (1-back, 2-back y 3-back) con secuencias de letras pre-generadas. Huang et al. (2025) es la revisión de referencia utilizada en el taller.
+Este repositorio contiene la **solución completa** del Taller 3 del curso, centrado en el diseño e implementación de la tarea N-Back en PsychoPy Builder. La tarea sigue el paradigma N-back introducido por Kirchner (1958), e incluye tres niveles de dificultad (1-back, 2-back y 3-back) con secuencias de letras pre-generadas. Huang et al. (2025) es la revisión de referencia utilizada en el taller.
 
 > **Nota:** Este repositorio se publica al finalizar el taller como material de referencia.
 
@@ -36,13 +34,13 @@ solucion_taller_3/
 │
 ├── conditions/
 │   ├── experimental/
-│   │   ├── experimental_1back.xlsx     # 20 trials — 1-back experimental
-│   │   ├── experimental_2back.xlsx     # 20 trials — 2-back experimental
-│   │   └── experimental_3back.xlsx     # 20 trials — 3-back experimental
+│   │   ├── condiciones_experimental_1back.xlsx     # 20 trials — 1-back experimental
+│   │   ├── condiciones_experimental_2back.xlsx     # 20 trials — 2-back experimental
+│   │   └── condiciones_experimental_3back.xlsx     # 20 trials — 3-back experimental
 │   └── practica/
-│       ├── practica_1back.xlsx         # 8 trials — 1-back práctica
-│       ├── practica_2back.xlsx         # 8 trials — 2-back práctica
-│       └── practica_3back.xlsx         # 8 trials — 3-back práctica
+│       ├── condiciones_practica_1back.xlsx         # 8 trials — 1-back práctica
+│       ├── condiciones_practica_2back.xlsx         # 8 trials — 2-back práctica
+│       └── condiciones_practica_3back.xlsx         # 8 trials — 3-back práctica
 │
 ├── docs/
 │   ├── instrucciones_nback.docx        # Instrucciones por pantalla con notas técnicas
@@ -66,24 +64,55 @@ solucion_taller_3/
 | Duración del estímulo | 500 ms |
 | Ventana de respuesta | 2000 ms (forceEndRoutine = True) |
 | Feedback | Solo en fase de práctica |
-| Variables dependientes | Precisión (% correcto) y RT (ms) por nivel |
+| Variables de la tarea | Precisión (% correcto) y RT (ms) por nivel |
 
 ### Flujo de la tarea
 
-```
-instrucciones_generales
+```mermaid
+flowchart TB
+ subgraph LP["loop_practica_NBX"]
+        P3["feedback_practica"]
+        P2["respuesta_practica"]
+        P1["estimulo_practica"]
+  end
+ subgraph BLK_P["Bloque práctica  ×3  (X = 1, 2, 3)"]
+        LP
+        B["instrucciones_practica_NBX"]
+  end
+ subgraph LE["loop_NBX"]
+        E2["respuesta"]
+        E1["estimulo"]
+  end
+ subgraph BLK_E["Bloque experimental  ×3  (X = 1, 2, 3)"]
+        LE
+        E["instrucciones_NBX"]
+  end
+    A["instrucciones_generales"] --> BLK_P
+    B --> LP
+    P1 --> P2
+    P2 --> P3
+    BLK_P --> C["fin_practica"]
+    C --> D["descanso 60 s"]
+    D --> BLK_E
+    E --> LE
+    E1 --> E2
+    BLK_E --> F["fin_experimento"]
 
-instrucciones_nb1_practica → [loop_practica_NB1: estimulo + respuesta + feedback]
-instrucciones_nb2_practica → [loop_practica_NB2: estimulo + respuesta + feedback]
-instrucciones_nb3_practica → [loop_practica_NB3: estimulo + respuesta + feedback]
-
-fin_practica → descanso (60 s)
-
-instrucciones_nb1 → [loop_NB1: estimulo + respuesta]
-instrucciones_nb2 → [loop_NB2: estimulo + respuesta]
-instrucciones_nb3 → [loop_NB3: estimulo + respuesta]
-
-fin_experimento
+    style P3  fill:#AFA9EC,stroke:#534AB7,color:#26215C
+    style P2  fill:#AFA9EC,stroke:#534AB7,color:#26215C
+    style P1  fill:#AFA9EC,stroke:#534AB7,color:#26215C
+    style LP  fill:#EEEDFE,stroke:#534AB7,color:#26215C
+    style B   fill:#AFA9EC,stroke:#534AB7,color:#26215C
+    style E2  fill:#5DCAA5,stroke:#0F6E56,color:#04342C
+    style E1  fill:#5DCAA5,stroke:#0F6E56,color:#04342C
+    style LE  fill:#E1F5EE,stroke:#0F6E56,color:#04342C
+    style E   fill:#5DCAA5,stroke:#0F6E56,color:#04342C
+    style A   fill:#D3D1C7,stroke:#D50000,color:#2C2C2A,fill:#FFCDD2
+    style BLK_P fill:#EEEDFE,stroke:#534AB7,color:#26215C
+    style C   fill:#D3D1C7,stroke:#534AB7,color:#2C2C2A,fill:#AFA9EC
+    style D   fill:#FAC775,stroke:#BA7517,color:#412402
+    style BLK_E fill:#E1F5EE,stroke:#0F6E56,color:#04342C
+    style F   fill:#D3D1C7,stroke:#FFD600,color:#2C2C2A,fill:#FFF9C4
 ```
 
 ---

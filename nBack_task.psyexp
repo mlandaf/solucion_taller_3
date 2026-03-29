@@ -403,6 +403,22 @@
       </KeyboardComponent>
     </Routine>
     <Routine name="estimulo_NB2">
+      <RoutineSettingsComponent name="estimulo_NB2" plugin="None">
+        <Param val="none" valType="str" updates="None" name="backgroundFit"/>
+        <Param val="" valType="str" updates="None" name="backgroundImg"/>
+        <Param val="$[0,0,0]" valType="color" updates="None" name="color"/>
+        <Param val="rgb" valType="str" updates="None" name="colorSpace"/>
+        <Param val="" valType="str" updates="constant" name="desc"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="False" valType="code" updates="None" name="forceNonSlip"/>
+        <Param val="estimulo_NB2" valType="code" updates="None" name="name"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="constant" name="skipIf"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="False" valType="bool" updates="None" name="useWindowParams"/>
+      </RoutineSettingsComponent>
       <TextComponent name="txt_letra_NB2" plugin="None">
         <Param val="white" valType="color" updates="constant" name="color"/>
         <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
@@ -430,22 +446,6 @@
         <Param val="" valType="code" updates="None" name="validator"/>
         <Param val="" valType="num" updates="constant" name="wrapWidth"/>
       </TextComponent>
-      <RoutineSettingsComponent name="estimulo_NB2" plugin="None">
-        <Param val="none" valType="str" updates="None" name="backgroundFit"/>
-        <Param val="" valType="str" updates="None" name="backgroundImg"/>
-        <Param val="$[0,0,0]" valType="color" updates="None" name="color"/>
-        <Param val="rgb" valType="str" updates="None" name="colorSpace"/>
-        <Param val="" valType="str" updates="constant" name="desc"/>
-        <Param val="False" valType="bool" updates="None" name="disabled"/>
-        <Param val="" valType="code" updates="None" name="durationEstim"/>
-        <Param val="False" valType="code" updates="None" name="forceNonSlip"/>
-        <Param val="estimulo_NB2" valType="code" updates="None" name="name"/>
-        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
-        <Param val="" valType="code" updates="constant" name="skipIf"/>
-        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
-        <Param val="" valType="code" updates="constant" name="stopVal"/>
-        <Param val="False" valType="bool" updates="None" name="useWindowParams"/>
-      </RoutineSettingsComponent>
     </Routine>
     <Routine name="respuesta_NB2">
       <RoutineSettingsComponent name="respuesta_NB2" plugin="None">
@@ -779,6 +779,22 @@
       </TextComponent>
     </Routine>
     <Routine name="respuesta_practica_NB1">
+      <RoutineSettingsComponent name="respuesta_practica_NB1" plugin="None">
+        <Param val="none" valType="str" updates="None" name="backgroundFit"/>
+        <Param val="" valType="str" updates="None" name="backgroundImg"/>
+        <Param val="$[0,0,0]" valType="color" updates="None" name="color"/>
+        <Param val="rgb" valType="str" updates="None" name="colorSpace"/>
+        <Param val="" valType="str" updates="constant" name="desc"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="False" valType="code" updates="None" name="forceNonSlip"/>
+        <Param val="respuesta_practica_NB1" valType="code" updates="None" name="name"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="constant" name="skipIf"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="False" valType="bool" updates="None" name="useWindowParams"/>
+      </RoutineSettingsComponent>
       <PolygonComponent name="fix_cross_NB1_p" plugin="None">
         <Param val="center" valType="str" updates="constant" name="anchor"/>
         <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
@@ -808,22 +824,6 @@
         <Param val="" valType="code" updates="None" name="validator"/>
         <Param val="" valType="list" updates="constant" name="vertices"/>
       </PolygonComponent>
-      <RoutineSettingsComponent name="respuesta_practica_NB1" plugin="None">
-        <Param val="none" valType="str" updates="None" name="backgroundFit"/>
-        <Param val="" valType="str" updates="None" name="backgroundImg"/>
-        <Param val="$[0,0,0]" valType="color" updates="None" name="color"/>
-        <Param val="rgb" valType="str" updates="None" name="colorSpace"/>
-        <Param val="" valType="str" updates="constant" name="desc"/>
-        <Param val="False" valType="bool" updates="None" name="disabled"/>
-        <Param val="" valType="code" updates="None" name="durationEstim"/>
-        <Param val="False" valType="code" updates="None" name="forceNonSlip"/>
-        <Param val="respuesta_practica_NB1" valType="code" updates="None" name="name"/>
-        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
-        <Param val="" valType="code" updates="constant" name="skipIf"/>
-        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
-        <Param val="" valType="code" updates="constant" name="stopVal"/>
-        <Param val="False" valType="bool" updates="None" name="useWindowParams"/>
-      </RoutineSettingsComponent>
       <KeyboardComponent name="key_resp_NB1_p" plugin="None">
         <Param val="'a','l'" valType="list" updates="constant" name="allowedKeys"/>
         <Param val="$tecla_correcta_p" valType="str" updates="constant" name="correctAns"/>
@@ -1494,9 +1494,9 @@
     <Routine name="instrucciones_generales"/>
     <Routine name="instrucciones_NB1_practica"/>
     <LoopInitiator loopType="TrialHandler" name="loop_NB1_practica">
-      <Param name="Selected rows" updates="None" val="" valType="code"/>
+      <Param name="Selected rows" updates="None" val="" valType="str"/>
       <Param name="conditions" updates="None" val="[{'id_p': 1, 'letra_p': 'R', 'es_target_p': 0, 'tecla_correcta_p': 'a'}, {'id_p': 2, 'letra_p': 'R', 'es_target_p': 1, 'tecla_correcta_p': 'l'}, {'id_p': 3, 'letra_p': 'G', 'es_target_p': 0, 'tecla_correcta_p': 'a'}, {'id_p': 4, 'letra_p': 'G', 'es_target_p': 1, 'tecla_correcta_p': 'l'}, {'id_p': 5, 'letra_p': 'H', 'es_target_p': 0, 'tecla_correcta_p': 'a'}, {'id_p': 6, 'letra_p': 'F', 'es_target_p': 0, 'tecla_correcta_p': 'a'}, {'id_p': 7, 'letra_p': 'V', 'es_target_p': 0, 'tecla_correcta_p': 'a'}, {'id_p': 8, 'letra_p': 'V', 'es_target_p': 1, 'tecla_correcta_p': 'l'}]" valType="str"/>
-      <Param name="conditionsFile" updates="None" val="conditions/practica/practica_1back.xlsx" valType="file"/>
+      <Param name="conditionsFile" updates="None" val="conditions/practica/condiciones_practica_1back.xlsx" valType="file"/>
       <Param name="endPoints" updates="None" val="[0, 1]" valType="code"/>
       <Param name="isTrials" updates="None" val="True" valType="bool"/>
       <Param name="loopType" updates="None" val="sequential" valType="str"/>
@@ -1510,9 +1510,9 @@
     <LoopTerminator name="loop_NB1_practica"/>
     <Routine name="instrucciones_NB2_practica"/>
     <LoopInitiator loopType="TrialHandler" name="loop_NB2_practica">
-      <Param name="Selected rows" updates="None" val="" valType="code"/>
+      <Param name="Selected rows" updates="None" val="" valType="str"/>
       <Param name="conditions" updates="None" val="[{'id_p': 1, 'letra_p': 'B', 'es_target_p': 0, 'tecla_correcta_p': 'a'}, {'id_p': 2, 'letra_p': 'H', 'es_target_p': 0, 'tecla_correcta_p': 'a'}, {'id_p': 3, 'letra_p': 'K', 'es_target_p': 0, 'tecla_correcta_p': 'a'}, {'id_p': 4, 'letra_p': 'H', 'es_target_p': 1, 'tecla_correcta_p': 'l'}, {'id_p': 5, 'letra_p': 'T', 'es_target_p': 0, 'tecla_correcta_p': 'a'}, {'id_p': 6, 'letra_p': 'H', 'es_target_p': 1, 'tecla_correcta_p': 'l'}, {'id_p': 7, 'letra_p': 'V', 'es_target_p': 0, 'tecla_correcta_p': 'a'}, {'id_p': 8, 'letra_p': 'H', 'es_target_p': 1, 'tecla_correcta_p': 'l'}]" valType="str"/>
-      <Param name="conditionsFile" updates="None" val="conditions/practica/practica_2back.xlsx" valType="file"/>
+      <Param name="conditionsFile" updates="None" val="conditions/practica/condiciones_practica_2back.xlsx" valType="file"/>
       <Param name="endPoints" updates="None" val="[0, 1]" valType="code"/>
       <Param name="isTrials" updates="None" val="True" valType="bool"/>
       <Param name="loopType" updates="None" val="sequential" valType="str"/>
@@ -1526,9 +1526,9 @@
     <LoopTerminator name="loop_NB2_practica"/>
     <Routine name="instrucciones_NB3_practica"/>
     <LoopInitiator loopType="TrialHandler" name="loop_NB3_practica">
-      <Param name="Selected rows" updates="None" val="" valType="code"/>
+      <Param name="Selected rows" updates="None" val="" valType="str"/>
       <Param name="conditions" updates="None" val="[{'id_p': 1, 'letra_p': 'K', 'es_target_p': 0, 'tecla_correcta_p': 'a'}, {'id_p': 2, 'letra_p': 'P', 'es_target_p': 0, 'tecla_correcta_p': 'a'}, {'id_p': 3, 'letra_p': 'P', 'es_target_p': 0, 'tecla_correcta_p': 'a'}, {'id_p': 4, 'letra_p': 'K', 'es_target_p': 1, 'tecla_correcta_p': 'l'}, {'id_p': 5, 'letra_p': 'P', 'es_target_p': 1, 'tecla_correcta_p': 'l'}, {'id_p': 6, 'letra_p': 'G', 'es_target_p': 0, 'tecla_correcta_p': 'a'}, {'id_p': 7, 'letra_p': 'K', 'es_target_p': 1, 'tecla_correcta_p': 'l'}, {'id_p': 8, 'letra_p': 'H', 'es_target_p': 0, 'tecla_correcta_p': 'a'}]" valType="str"/>
-      <Param name="conditionsFile" updates="None" val="conditions/practica/practica_3back.xlsx" valType="file"/>
+      <Param name="conditionsFile" updates="None" val="conditions/practica/condiciones_practica_3back.xlsx" valType="file"/>
       <Param name="endPoints" updates="None" val="[0, 1]" valType="code"/>
       <Param name="isTrials" updates="None" val="True" valType="bool"/>
       <Param name="loopType" updates="None" val="sequential" valType="str"/>
@@ -1544,9 +1544,9 @@
     <Routine name="descanso"/>
     <Routine name="instrucciones_NB1"/>
     <LoopInitiator loopType="TrialHandler" name="loop_NB1">
-      <Param name="Selected rows" updates="None" val="" valType="code"/>
+      <Param name="Selected rows" updates="None" val="" valType="str"/>
       <Param name="conditions" updates="None" val="[{'id': 1, 'letra': 'Q', 'es_target': 0, 'tecla_correcta': 'a'}, {'id': 2, 'letra': 'Q', 'es_target': 1, 'tecla_correcta': 'l'}, {'id': 3, 'letra': 'P', 'es_target': 0, 'tecla_correcta': 'a'}, {'id': 4, 'letra': 'G', 'es_target': 0, 'tecla_correcta': 'a'}, {'id': 5, 'letra': 'R', 'es_target': 0, 'tecla_correcta': 'a'}, {'id': 6, 'letra': 'G', 'es_target': 0, 'tecla_correcta': 'a'}, {'id': 7, 'letra': 'J', 'es_target': 0, 'tecla_correcta': 'a'}, {'id': 8, 'letra': 'J', 'es_target': 1, 'tecla_correcta': 'l'}, {'id': 9, 'letra': 'P', 'es_target': 0, 'tecla_correcta': 'a'}, {'id': 10, 'letra': 'V', 'es_target': 0, 'tecla_correcta': 'a'}, {'id': 11, 'letra': 'W', 'es_target': 0, 'tecla_correcta': 'a'}, {'id': 12, 'letra': 'W', 'es_target': 1, 'tecla_correcta': 'l'}, {'id': 13, 'letra': 'W', 'es_target': 1, 'tecla_correcta': 'l'}, {'id': 14, 'letra': 'G', 'es_target': 0, 'tecla_correcta': 'a'}, {'id': 15, 'letra': 'K', 'es_target': 0, 'tecla_correcta': 'a'}, {'id': 16, 'letra': 'K', 'es_target': 1, 'tecla_correcta': 'l'}, {'id': 17, 'letra': 'P', 'es_target': 0, 'tecla_correcta': 'a'}, {'id': 18, 'letra': 'D', 'es_target': 0, 'tecla_correcta': 'a'}, {'id': 19, 'letra': 'D', 'es_target': 1, 'tecla_correcta': 'l'}, {'id': 20, 'letra': 'J', 'es_target': 0, 'tecla_correcta': 'a'}]" valType="str"/>
-      <Param name="conditionsFile" updates="None" val="conditions/experimental/experimental_1back.xlsx" valType="file"/>
+      <Param name="conditionsFile" updates="None" val="conditions/experimental/condiciones_experimental_1back.xlsx" valType="file"/>
       <Param name="endPoints" updates="None" val="[0, 1]" valType="code"/>
       <Param name="isTrials" updates="None" val="True" valType="bool"/>
       <Param name="loopType" updates="None" val="sequential" valType="str"/>
@@ -1559,9 +1559,9 @@
     <LoopTerminator name="loop_NB1"/>
     <Routine name="instrucciones_NB2"/>
     <LoopInitiator loopType="TrialHandler" name="loop_NB2">
-      <Param name="Selected rows" updates="None" val="" valType="code"/>
+      <Param name="Selected rows" updates="None" val="" valType="str"/>
       <Param name="conditions" updates="None" val="[{'id': 1, 'letra': 'F', 'es_target': 0, 'tecla_correcta': 'a'}, {'id': 2, 'letra': 'R', 'es_target': 0, 'tecla_correcta': 'a'}, {'id': 3, 'letra': 'M', 'es_target': 0, 'tecla_correcta': 'a'}, {'id': 4, 'letra': 'Q', 'es_target': 0, 'tecla_correcta': 'a'}, {'id': 5, 'letra': 'R', 'es_target': 0, 'tecla_correcta': 'a'}, {'id': 6, 'letra': 'B', 'es_target': 0, 'tecla_correcta': 'a'}, {'id': 7, 'letra': 'R', 'es_target': 1, 'tecla_correcta': 'l'}, {'id': 8, 'letra': 'B', 'es_target': 1, 'tecla_correcta': 'l'}, {'id': 9, 'letra': 'R', 'es_target': 1, 'tecla_correcta': 'l'}, {'id': 10, 'letra': 'V', 'es_target': 0, 'tecla_correcta': 'a'}, {'id': 11, 'letra': 'P', 'es_target': 0, 'tecla_correcta': 'a'}, {'id': 12, 'letra': 'V', 'es_target': 1, 'tecla_correcta': 'l'}, {'id': 13, 'letra': 'Q', 'es_target': 0, 'tecla_correcta': 'a'}, {'id': 14, 'letra': 'V', 'es_target': 1, 'tecla_correcta': 'l'}, {'id': 15, 'letra': 'R', 'es_target': 0, 'tecla_correcta': 'a'}, {'id': 16, 'letra': 'T', 'es_target': 0, 'tecla_correcta': 'a'}, {'id': 17, 'letra': 'P', 'es_target': 0, 'tecla_correcta': 'a'}, {'id': 18, 'letra': 'F', 'es_target': 0, 'tecla_correcta': 'a'}, {'id': 19, 'letra': 'P', 'es_target': 1, 'tecla_correcta': 'l'}, {'id': 20, 'letra': 'V', 'es_target': 0, 'tecla_correcta': 'a'}]" valType="str"/>
-      <Param name="conditionsFile" updates="None" val="conditions/experimental/experimental_2back.xlsx" valType="file"/>
+      <Param name="conditionsFile" updates="None" val="conditions/experimental/condiciones_experimental_2back.xlsx" valType="file"/>
       <Param name="endPoints" updates="None" val="[0, 1]" valType="code"/>
       <Param name="isTrials" updates="None" val="True" valType="bool"/>
       <Param name="loopType" updates="None" val="sequential" valType="str"/>
@@ -1574,9 +1574,9 @@
     <LoopTerminator name="loop_NB2"/>
     <Routine name="instrucciones_NB3"/>
     <LoopInitiator loopType="TrialHandler" name="loop_NB3">
-      <Param name="Selected rows" updates="None" val="" valType="code"/>
+      <Param name="Selected rows" updates="None" val="" valType="str"/>
       <Param name="conditions" updates="None" val="[{'id': 1, 'letra': 'T', 'es_target': 0, 'tecla_correcta': 'a'}, {'id': 2, 'letra': 'M', 'es_target': 0, 'tecla_correcta': 'a'}, {'id': 3, 'letra': 'T', 'es_target': 0, 'tecla_correcta': 'a'}, {'id': 4, 'letra': 'R', 'es_target': 0, 'tecla_correcta': 'a'}, {'id': 5, 'letra': 'M', 'es_target': 1, 'tecla_correcta': 'l'}, {'id': 6, 'letra': 'T', 'es_target': 1, 'tecla_correcta': 'l'}, {'id': 7, 'letra': 'K', 'es_target': 0, 'tecla_correcta': 'a'}, {'id': 8, 'letra': 'P', 'es_target': 0, 'tecla_correcta': 'a'}, {'id': 9, 'letra': 'J', 'es_target': 0, 'tecla_correcta': 'a'}, {'id': 10, 'letra': 'K', 'es_target': 1, 'tecla_correcta': 'l'}, {'id': 11, 'letra': 'T', 'es_target': 0, 'tecla_correcta': 'a'}, {'id': 12, 'letra': 'D', 'es_target': 0, 'tecla_correcta': 'a'}, {'id': 13, 'letra': 'K', 'es_target': 1, 'tecla_correcta': 'l'}, {'id': 14, 'letra': 'M', 'es_target': 0, 'tecla_correcta': 'a'}, {'id': 15, 'letra': 'D', 'es_target': 1, 'tecla_correcta': 'l'}, {'id': 16, 'letra': 'D', 'es_target': 0, 'tecla_correcta': 'a'}, {'id': 17, 'letra': 'F', 'es_target': 0, 'tecla_correcta': 'a'}, {'id': 18, 'letra': 'D', 'es_target': 1, 'tecla_correcta': 'l'}, {'id': 19, 'letra': 'H', 'es_target': 0, 'tecla_correcta': 'a'}, {'id': 20, 'letra': 'R', 'es_target': 0, 'tecla_correcta': 'a'}]" valType="str"/>
-      <Param name="conditionsFile" updates="None" val="conditions/experimental/experimental_3back.xlsx" valType="file"/>
+      <Param name="conditionsFile" updates="None" val="conditions/experimental/condiciones_experimental_3back.xlsx" valType="file"/>
       <Param name="endPoints" updates="None" val="[0, 1]" valType="code"/>
       <Param name="isTrials" updates="None" val="True" valType="bool"/>
       <Param name="loopType" updates="None" val="sequential" valType="str"/>
