@@ -93,6 +93,7 @@ flowchart TD
             E --> LE
             subgraph LE[loop_NBX x 20]
                 E1[estimulo] --> E2[respuesta]
+                E2 --> E3[ITI]
             end
         end
     end
@@ -118,6 +119,7 @@ flowchart TD
     style E    fill:#5DCAA5,stroke:#0F6E56,color:#04342C
     style E1   fill:#5DCAA5,stroke:#0F6E56,color:#04342C
     style E2   fill:#5DCAA5,stroke:#0F6E56,color:#04342C
+    style E3   fill:#5DCAA5,stroke:#0F6E56,color:#04342C
     style LE   fill:#E1F5EE,stroke:#0F6E56,color:#04342C
     style BLK_E fill:#E8F8F3,stroke:#0F6E56,color:#04342C
     style SB   fill:#EBF3FA,stroke:#2E6DA4,color:#0D2E4A
