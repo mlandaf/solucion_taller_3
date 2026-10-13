@@ -53,7 +53,7 @@ solucion_taller_3/
 │       ├── condiciones_experimental_2back.xlsx
 │       └── condiciones_experimental_3back.xlsx
 ├── docs/
-│   └── instrucciones_nback.docx              # Consignas por pantalla
+│   └── instrucciones_nback.docx              # Instrucciones
 ├── media/
 │   ├── estructura_experimento.png           # Diagrama del flujo
 │   ├── SECUENCIA_PRACTICA_SIN_ETIQUETAS_ALTA_RES.png
