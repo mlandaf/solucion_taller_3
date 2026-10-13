@@ -12,13 +12,13 @@ Este repositorio contiene la **solución completa** del Taller 3 del curso, cent
 
 ### Secuencia del ensayo de práctica
 
-![Secuencia del ensayo de práctica: cruz de fijación, letra y respuesta, feedback](media/SECUENCIA_PRACTICA_SIN_ETIQUETAS_ALTA_RES.png)
+![Secuencia del ensayo de práctica: cruz de fijación, letra y respuesta, feedback](media/secuencia_practica.png)
 
 **Cruz de fijación (500 ms) → Letra y respuesta (hasta 2000 ms) → Feedback (1000 ms).**
 
 ### Secuencia del ensayo experimental
 
-![Secuencia del ensayo experimental: cruz de fijación, letra y respuesta, intervalo en blanco](media/SECUENCIA_EXPERIMENTAL_SIN_ETIQUETAS_ALTA_RES.png)
+![Secuencia del ensayo experimental: cruz de fijación, letra y respuesta, intervalo en blanco](media/secuencia_experimental.png)
 
 **Cruz de fijación (500 ms) → Letra y respuesta (hasta 2000 ms) → ITI en blanco (500 ms).**
 
@@ -56,8 +56,8 @@ solucion_taller_3/
 │   └── instrucciones_nback.docx              # Instrucciones
 ├── media/
 │   ├── estructura_experimento.png           # Diagrama del flujo
-│   ├── SECUENCIA_PRACTICA_SIN_ETIQUETAS_ALTA_RES.png
-│   └── SECUENCIA_EXPERIMENTAL_SIN_ETIQUETAS_ALTA_RES.png
+│   ├── secuencia_practica.png
+│   └── secuencia_experimental.png
 └── readme.md
 ```
 
