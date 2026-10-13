@@ -1,4 +1,4 @@
-# Taller 3 — Tarea n-back (Solución)
+# Taller 3 - Tarea n-back (Solución)
 
 - **Asignatura:** Investigación e Intervención desde las Neurociencias Aplicadas
 - **Ciclo:** 2026-2
@@ -204,6 +204,6 @@ Redick, T. S., & Lindsey, D. R. B. (2013). Complex span and n-back measures of w
 
 **Marcelo Landa**
 
-Asistente de cátedra — Investigación e Intervención desde las Neurociencias Aplicadas
+Asistente de cátedra - Investigación e Intervención desde las Neurociencias Aplicadas
 
 Universidad de Lima
